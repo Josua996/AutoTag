@@ -4,7 +4,7 @@
 
 # 🤷🏼‍♂️ What is Auto Tag?
 _Auto Tag_ is a Thunderbird addon that allows you to automatically assign tags to incoming emails. You can assign tags to individual e-mail addresses. After the tags are selected, they will be assigned to all new incoming mails from this sender.  
-You can download the addon directly from the Mozilla website: _Comming Soon®_
+You can download the addon directly from the Mozilla website: [https://addons.thunderbird.net/de/thunderbird/addon/auto-tag/](url)
 
 # 🚀 Features
 ### &nbsp;&nbsp;&nbsp;🌎 Multilingual
