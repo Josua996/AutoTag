@@ -62,10 +62,11 @@ The toolbar can be activated in the addon settings. With it you can quickly add 
 <p><b>♻️ Refactor:</b> There is certainly a lot of potential to improve the code, whether commenting, performance, or bugs. Feel free to also make bigger changes to the code.</p>
 <p><b>🎉 New Features:</b> If you have an idea to implement a new feature, feel free to create a pull request. If I can help you with the implementation - let me know! If you want to help but don't know what, here are some ideas:</p>
 <ul>
-<li>The ability to add new entries in the addon settingsx</li>
-<li>Improve the <i>Tag Quickselect Toolbar</i></li>
-<li>A function to export and import the current configuration</li>
-<li>The addon could be much more dynamic and more customizable via the settings</li>
+	<li>The ability to add new entries in the addon settings</li>
+	<li>Improve the <i>Tag Quickselect Toolbar</i></li>
+	<li>A function to export and import the current configuration</li>
+	<li>The addon could be much more dynamic and more customizable via the settings</li>
+	<li>If no configurations are saved, a guide/message should be displayed in the settings</li>
 </ul>
 </dd></dl>
 
