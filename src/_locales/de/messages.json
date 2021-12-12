@@ -1,0 +1,23 @@
+{
+    "extensionDescription": {
+        "message": "E-Mails anhand der Absenderadresse automatisch mit Schlagwörtern versehen"
+    },
+    "auto_tag_popup_headline": {
+        "message": "Schlagwörter nach Absender"
+    },
+    "auto_tag_popup_checkbox_headline": {
+        "message": "Künftige Mails des Absenders erhalten:"
+    },
+    "option_toggle_toolbar":{
+        "message": "Tag-Schnellauswahl über der Nachricht:"
+    },
+    "option_toggle_toolbar_label":{
+        "message": "Aktiviert"
+    },
+    "option_auto_tag_address_headline":{
+        "message": "Automische Schlagwörter:"
+    },
+    "delete":{
+        "message": "Löschen"
+    }
+}

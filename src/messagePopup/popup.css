@@ -1,0 +1,77 @@
+body {
+  color: rgb(235, 235, 235);
+  padding: 0.6rem;
+  background-color: rgb(37, 37, 37);
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mail {
+  font-style: italic;
+  color: rgb(145, 145, 145);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#tag_select {
+  display: grid;
+  grid-template-columns: min-content auto min-content auto;
+  border-radius: 8px;
+  border-color: rgb(145, 145, 145);
+}
+label {
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+input[type="checkbox"] {
+
+  /* Remove most all native input styles */
+  appearance: none;
+  margin: 4px;
+
+  font: inherit;
+  color: var(--text-color);
+  width: 1rem;
+  height: 1rem;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 90ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--text-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}

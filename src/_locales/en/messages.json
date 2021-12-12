@@ -1,0 +1,23 @@
+{
+  "extensionDescription": {
+    "message": "Automatically tag emails based on the sender address"
+  },
+  "auto_tag_popup_headline": {
+    "message": "Auto tag by address"
+  },
+  "auto_tag_popup_checkbox_headline": {
+    "message": "Future Mails should be assigned with:"
+  },
+  "option_toggle_toolbar": {
+    "message": "Tag-Quickselect-Toolbar above Message:"
+  },
+  "option_toggle_toolbar_label": {
+    "message": "Enabled"
+  },
+  "option_auto_tag_address_headline": {
+    "message": "Auto tag based on sender address:"
+  },
+  "delete": {
+    "message": "Delete"
+  }
+}

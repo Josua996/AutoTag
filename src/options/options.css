@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  color: var(--text-color);
+}
+
+table {
+  width: 100%;
+  border: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: 12px 0;
+}
+
+tr {
+  width: 100%;
+  padding: 12px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+tr:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+  text-align: center;
+  margin-right: 2rem;
+}
+tr:last-child {
+  margin-right: 0rem !important;
+}
+label {
+  white-space: nowrap;
+}
+
+.delete_button {
+  color: #fff;
+  background-color: #f35959;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #f35959;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  border-radius: 8px;
+  font-style: normal;
+  padding: 7px 15px;
+  min-height: 28px;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete_button:hover {
+  background: #f56c6c;
+  border-color: #f56c6c;
+  color: #fff;
+}
+.tag_selection {
+  display: grid;
+  grid-template-columns: min-content auto min-content auto;
+  margin-left: 1rem;
+}
+tr td:last-child {
+  width: 100px;
+  white-space: nowrap;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  margin: 4px;
+  font: inherit;
+  color: var(--text-color);
+  width: 1rem;
+  height: 1rem;
+  border: 0.15em solid var(--text-color);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 90ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--text-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}

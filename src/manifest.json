@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Tag",
+  "description": "__MSG_extensionDescription__",
+  "version": "0.1",
+  "author": "Josua Köhler",
+  "developer": {
+    "name": "Josua Köhler",
+    "url": "https://github.com/Josua996/AutoTag"
+  },
+  "applications": {
+    "gecko": {
+      "id": "auto_tag@josua.win",
+      "strict_min_version": "78.0"
+    }
+  },
+  "message_display_action": {
+    "default_popup": "messagePopup/popup.html",
+    "default_title": "Auto Tag",
+    "default_icon": "images/logo-32px.png",
+    "browser_style": true
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "permissions": [
+    "messagesRead",
+    "accountsRead",
+    "storage",
+    "menus",
+    "messagesModify"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "default_locale": "en",
+  "icons": {
+    "64": "images/logo.png",
+    "32": "images/logo-32px.png",
+    "16": "images/logo-16px.png"
+  }
+}
