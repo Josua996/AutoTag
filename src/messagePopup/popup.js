@@ -19,6 +19,12 @@ async function load() {
     r.style.setProperty('--text-color', theme.colors.popup_text);
   }
 
+  var fancy_checkboxes = false
+  // Check if checkboxes should be fancy
+  messenger.storage.local.get(`fancy_checkboxes`).then((val) =>{
+    fancy_checkboxes = !!val.fancy_checkboxes
+  })
+
   // The user clicked our button, get the active tab in the current window using
   // the tabs API.
   let tabs = await messenger.tabs.query({ active: true, currentWindow: true });
@@ -63,6 +69,9 @@ async function load() {
     checkbox.type = "checkbox";
     checkbox.name = "name";
     checkbox.value = element.key;
+    if (fancy_checkboxes){
+      checkbox.classList.add("fancy_checkbox")
+    }
     messenger.storage.local.get(`email_config`).then((val) => {
       // If tag in the previous configuration was found 
       if (email_in_prev_configuration) {

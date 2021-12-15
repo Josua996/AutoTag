@@ -31,7 +31,7 @@ label {
   background-color: transparent;
 }
 
-input[type="checkbox"] {
+.fancy_checkbox[type="checkbox"] {
 
   /* Remove most all native input styles */
   appearance: none;
@@ -49,7 +49,7 @@ input[type="checkbox"] {
   place-content: center;
 }
 
-input[type="checkbox"]::before {
+.fancy_checkbox[type="checkbox"]::before {
   content: "";
   width: 0.65em;
   height: 0.65em;
@@ -60,7 +60,7 @@ input[type="checkbox"]::before {
   box-shadow: inset 1em 1em var(--text-color);
 }
 
-input[type="checkbox"]:checked::before {
+.fancy_checkbox[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 

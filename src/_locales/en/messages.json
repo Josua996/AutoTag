@@ -11,11 +11,14 @@
   "option_toggle_toolbar": {
     "message": "Tag-Quickselect-Toolbar above Message:"
   },
-  "option_toggle_toolbar_label": {
+  "enabled": {
     "message": "Enabled"
   },
   "option_auto_tag_address_headline": {
     "message": "Auto tag based on sender address:"
+  },
+  "option_toggle_checkboxes": {
+    "message": "Fancy Checkboxes:"
   },
   "delete": {
     "message": "Delete"

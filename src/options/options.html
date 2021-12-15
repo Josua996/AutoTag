@@ -3,26 +3,38 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" media="screen" href="options.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="options.css" />
   </head>
 
   <body>
-    <div style="padding: 8px;">
+    <div style="padding: 8px">
       <span><b id="option_toggle_toolbar">Missing String</b></span>
 
-      <form style="display: flex; margin-top: 0.5rem;">
-        <input type="checkbox" id="checkbox_tagbar" name="checkbox_tagbar"/>
-        <label for="checkbox_tagbar" id="option_toggle_toolbar_label">Missing String</label>
+      <form style="display: flex; margin-top: 0.5rem">
+        <input type="checkbox" id="checkbox_tagbar" name="checkbox_tagbar" />
+        <label for="checkbox_tagbar" id="option_toggle_toolbar_label"
+          >Missing String</label
+        >
       </form>
-      <div style="margin-top: 12px;">
+      <span><b id="option_toggle_checkboxes">Fancy Checkboxes</b></span>
+      <form style="display: flex; margin-top: 0.5rem">
+        <input
+          type="checkbox"
+          id="checkbox_fancy_checkboxes"
+          name="checkbox_fancy_checkboxes"
+        />
+        <label
+          for="checkbox_fancy_checkboxes"
+          id="checkbox_fancy_checkboxes_label"
+          >Fancy Checkboxes</label
+        >
+      </form>
+      <div style="margin-top: 12px">
         <span><b id="option_auto_tag_address_headline">Missing String</b></span>
         <div style="margin-top: 0.5rem">
-          <table id="auto_tag_mails_wrapper">
-
-          </table>
+          <table id="auto_tag_mails_wrapper"></table>
         </div>
       </div>
-
     </div>
     <script src="options.js"></script>
   </body>
