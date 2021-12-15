@@ -8,15 +8,18 @@ async function load() {
 
   // Get the current theme
   let theme = await messenger.theme.getCurrent()
-  console.log(theme)
-  if (theme.colors.popup){
+  console.log("Theme Found", theme)
+  var r = document.querySelector(':root');
+
+  if (theme.colors && theme.colors.popup) {
     document.getElementsByTagName("body")[0].style.backgroundColor = theme.colors.popup
   }
-  if (theme.colors.popup_text){
+  if (theme.colors && theme.colors.popup_text) {
     document.getElementsByTagName("body")[0].style.color = theme.colors.popup_text
+    r.style.setProperty('--text-color', theme.colors.popup_text);
+  } else {
+    r.style.setProperty('--text-color', "white");
   }
-  var r = document.querySelector(':root');
-  r.style.setProperty('--text-color', theme.colors.popup_text);
 
   // The user clicked our button, get the active tab in the current window using
   // the tabs API.
@@ -30,7 +33,7 @@ async function load() {
 
   // extract the mail-adress
   // "exmaple" <example@example.de> --> example@example.de
-  if (message.author.endsWith(">")){
+  if (message.author.endsWith(">")) {
     message.author = message.author.match(".*<(.*)>$")[1]
   }
 
@@ -63,7 +66,7 @@ async function load() {
     checkbox.name = "name";
     checkbox.value = element.key;
     messenger.storage.local.get(`email_config`).then((val) => {
-        // If tag in the previous configuration was found 
+      // If tag in the previous configuration was found 
       if (email_in_prev_configuration) {
         if (old_data["email_config"][message.author].includes(element.key)) {
           checkbox.checked = true
@@ -82,13 +85,13 @@ async function load() {
       console.log("Selected Tags", selected_tags)
       let old_data = await messenger.storage.local.get(`email_config`)
       // If now no Tags are selected anymote --> delete entry
-      if (selected_tags.length == 0 ){
+      if (selected_tags.length == 0) {
         console.log("No tags are selected --> delete entry")
         delete old_data["email_config"][message.author]
-        var email_config = {...old_data.email_config}
-      }else{
+        var email_config = { ...old_data.email_config }
+      } else {
         var email_config = { [message.author]: selected_tags }
-        email_config = {...old_data.email_config, ...email_config}
+        email_config = { ...old_data.email_config, ...email_config }
       }
       messenger.storage.local.set({ email_config })
     });

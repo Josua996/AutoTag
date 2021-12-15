@@ -10,13 +10,13 @@
   },
   "applications": {
     "gecko": {
-      "id": "auto_tag@josua.win",
+      "id": "autotag@josua.win",
       "strict_min_version": "78.0"
     }
   },
   "message_display_action": {
     "default_popup": "messagePopup/popup.html",
-    "default_title": "Auto Tag",
+    "default_title": " ",
     "default_icon": "images/logo-32px.png",
     "browser_style": true
   },

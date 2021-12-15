@@ -7,17 +7,27 @@ async function init_options_page() {
 
   // Theme configuration
   let theme = await messenger.theme.getCurrent()
-
-  // Check if darf theme is active
-  // there might be a better solution, but for now it works
-  let is_dark_theme = parseFloat(theme.colors.popup.split(",")[1]) > 0.5
-  if (is_dark_theme){
-    document.getElementsByTagName("body")[0].style.backgroundColor = "#23222B"
-  }
-  document.getElementsByTagName("body")[0].style.color = theme.colors.popup_text
-
   var r = document.querySelector(':root');
-  r.style.setProperty('--text-color', theme.colors.popup_text);
+
+  // Check if a theme is active
+  if (theme.colors){
+    // Check if darf theme is active
+    // there might be a better solution, but for now it works
+    if (theme.colors.popup){
+      let is_dark_theme = parseFloat(theme.colors.popup.split(",")[1]) > 0.5
+      if (is_dark_theme){
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#23222B"
+      }
+    }
+    if (theme.colors.popup_text){
+      document.getElementsByTagName("body")[0].style.color = theme.colors.popup_text
+      r.style.setProperty('--text-color', theme.colors.popup_text);
+    }
+  // If no theme is found
+  } else{
+    r.style.setProperty('--text-color', "#23222B");
+  }
+
   
 
   // Load and set the strings
