@@ -23,9 +23,6 @@ async function init_options_page() {
       document.getElementsByTagName("body")[0].style.color = theme.colors.popup_text
       r.style.setProperty('--text-color', theme.colors.popup_text);
     }
-  // If no theme is found
-  } else{
-    r.style.setProperty('--text-color', "#23222B");
   }
 
   

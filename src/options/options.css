@@ -1,5 +1,9 @@
+:root{
+  --text-color: #23222B
+}
 body {
   height: 100vh;
+  background-color: "white";
   color: var(--text-color);
 }
 
@@ -34,6 +38,7 @@ tr:hover {
 td {
   text-align: center;
   margin-right: 2rem;
+  word-break: break-all;
 }
 tr:last-child {
   margin-right: 0rem !important;

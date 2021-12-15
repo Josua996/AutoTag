@@ -17,8 +17,6 @@ async function load() {
   if (theme.colors && theme.colors.popup_text) {
     document.getElementsByTagName("body")[0].style.color = theme.colors.popup_text
     r.style.setProperty('--text-color', theme.colors.popup_text);
-  } else {
-    r.style.setProperty('--text-color', "white");
   }
 
   // The user clicked our button, get the active tab in the current window using
