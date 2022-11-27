@@ -1,0 +1,26 @@
+{
+  "extensionDescription": {
+    "message": "Автоматически тегировать письма на основе адреса отправителя"
+  },
+  "auto_tag_popup_headline": {
+    "message": "Авто тег по адресу"
+  },
+  "auto_tag_popup_checkbox_headline": {
+    "message": "Будущие письма должны быть назначены:"
+  },
+  "option_toggle_toolbar": {
+    "message": "Сообщение над панелью Tag-QuickSelect:"
+  },
+  "enabled": {
+    "message": "Включено"
+  },
+  "option_auto_tag_address_headline": {
+    "message": "Авто тег на основе адреса отправителя:"
+  },
+  "option_toggle_checkboxes": {
+    "message": "Модные флажки:"
+  },
+  "delete": {
+    "message": "Удалить"
+  }
+}
