@@ -1,34 +1,26 @@
 {
   "extensionDescription": {
-    "message": "Automatically tag emails based on the sender address"
     "message": "自动依据发件人标记邮件"
   },
   "auto_tag_popup_headline": {
-    "message": "Auto tag by address"
     "message": "自动依据发件人标记"
   },
   "auto_tag_popup_checkbox_headline": {
-    "message": "Future Mails should be assigned with:"
     "message": "未来的邮件会被标记为："
   },
   "option_toggle_toolbar": {
-    "message": "Tag-Quickselect-Toolbar above Message:"
     "message": "在每封邮件上方显示“快速标记栏”"
   },
   "enabled": {
-    "message": "Enabled"
     "message": "启用"
   },
   "option_auto_tag_address_headline": {
-    "message": "Auto tag based on sender address:"
     "message": "自动标记来自以下发件人的邮件："
   },
   "option_toggle_checkboxes": {
-    "message": "Fancy Checkboxes:"
     "message": "好看的按钮"
   },
   "delete": {
-    "message": "Delete"
     "message": "删除"
   }
 }
