@@ -1,0 +1,26 @@
+{
+  "extensionDescription": {
+    "message": "Marquage automatique des e-mails en fonction de l'adresse de l'expéditeur"
+  },
+  "auto_tag_popup_headline": {
+    "message": "Marquage automatique par adresse"
+  },
+  "auto_tag_popup_checkbox_headline": {
+    "message": "Les futurs courriers doivent être affectés avec :"
+  },
+  "option_toggle_toolbar": {
+    "message": "Placer la barre d'outils Tag-Quickselect au-dessuss des Messages :"
+  },
+  "enabled": {
+    "message": "Activé"
+  },
+  "option_auto_tag_address_headline": {
+    "message": "Marquage automatique par adresse d'expéditeur :"
+  },
+  "option_toggle_checkboxes": {
+    "message": "Jolies cases à cocher :"
+  },
+  "delete": {
+    "message": "Supprimer"
+  }
+}
