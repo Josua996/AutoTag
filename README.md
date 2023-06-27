@@ -1,3 +1,5 @@
+**Note: This repository has been archived and is no longer actively maintained. The functionality provided by this Thunderbird Plugin is integrated into Thunderbird itself, and users are encouraged to use native Filters instead.**
+
 <p align="center">
   <img src="https://cdn.josuakoehler.de/AutoTag/LogoAutoTag_Title.png" height="200"/>
 </p>
